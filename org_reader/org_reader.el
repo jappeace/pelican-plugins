@@ -51,6 +51,8 @@
                                (org-read-date nil nil modifiedstr nil)
                              "")
                  :post (org-export-as backend nil nil t)
+				 :status (cdr (assoc-string "status" org-file-properties t))
+				 :subreddit (cdr (assoc-string "SUBREDDIT" org-file-properties t))
                  )
                 )
                )

@@ -99,6 +99,8 @@ class OrgReader(readers.BaseReader):
                     'category': json_output['category'] or '',
                     'slug': json_output['slug'] or default_slug,
                     'modified': json_output['modified'] or '',
+                    'subreddit': json_output['subreddit'] or '',
+                    'status': json_output['status'] or '',
                     'tags': json_output['tags'] or '',
                     'save_as': json_output['save_as'] or '',
                     'summary': json_output['summary'] or ''}
