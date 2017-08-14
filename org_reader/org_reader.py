@@ -87,7 +87,7 @@ class OrgReader(readers.BaseReader):
         LOG.debug("OrgReader: running command `%s`" % (' '.join(cmd)))
 
         try:
-            json_result = subprocess.check_output(cmd, universal_newlines=True, stderr=subprocess.STDOUT)
+            json_result = subprocess.check_output(cmd, universal_newlines=True)
         except subprocess.CalledProcessError as e:
             print("Failed error: output %s" % e.output)
             raise e
