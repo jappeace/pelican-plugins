@@ -36,8 +36,7 @@
                              (org-read-date nil nil dateobj nil)
                            (org-timestamp-format dateobj "%Y-%m-%d")))
 
-                 :author (substring-no-properties
-                          (car (plist-get org-export-env ':author)))
+                 :author "Jappie Klooster"
 
                  ; org file properties
                  :category (cdr (assoc-string "CATEGORY" org-file-properties t))
